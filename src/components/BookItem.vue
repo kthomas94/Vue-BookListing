@@ -8,10 +8,7 @@
 export default {
   name: "BookItem",
   props: {
-    book: {
-      type: String,
-      default: "",
-    },
+    ["book"]
   },
 };
 </script>
