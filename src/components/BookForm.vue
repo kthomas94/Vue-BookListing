@@ -1,5 +1,10 @@
 <template>
-  <form class="" action="#" method="post">
+  <form
+    class=""
+    action="#"
+    method="post"
+    @submit="bookSubmit(bookTitle, bookAuthor)"
+  >
     <input
       type="text"
       name="title"
@@ -14,13 +19,7 @@
       placeholder="Book Author"
       v-model="bookAuthor"
     />
-    <button
-      type="submit"
-      name="button"
-      @submit="bookSubmit(bookTitle, bookAuthor)"
-    >
-      Add Book
-    </button>
+    <button type="submit" name="button">Add Book</button>
   </form>
 </template>
 
