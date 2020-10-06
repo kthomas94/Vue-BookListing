@@ -3,7 +3,7 @@
     class=""
     action="#"
     method="post"
-    @submit="bookSubmit(bookTitle, bookAuthor)"
+    @submit.prevent="bookSubmit(bookTitle, bookAuthor)"
   >
     <input
       type="text"
